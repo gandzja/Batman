@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batman</title>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -15,26 +17,26 @@
     <!-- этот контейнер дердит все содержимое по середине  -->
     <div class="container">
       <header class="header">
-        <div class="logo">КиноПульс</div>
-        <form action="" class="search">
+        <a href="#" class="logo">КиноПульс</a>
+        <form action="" class="search" required>
           <input type="search" class="search-input" placeholder="Фильмы, сериалы, актеры">
           <button class="search-button" type="search-button">
             <img src="img/search-icon1.svg" alt="search-icon">
           </button>
         </form>
         <div class="user">
-          <img src="img/bookmark.svg" alt="bookmark" class="bookmark">
+          <a href="#"><img src="img/bookmark.svg" alt="bookmark" class="bookmark"></a>
           <img src="img/my_avatar.jpg" alt="avatar" class="avatar">
         </div>
       </header>
       <main>
-        <h1 class="title">Бетмен</h1>
-        <small class="title-en">The Batman</small>
-        <div class="info">
+        <h1 class="title animated fadeInRight">Бетмен</h1>
+        <small class="title-en animated fadeInRight">The Batman</small>
+        <div class="info animated fadeInLeft delay-2s">
           <div class="movie-info">
             <span class="tag">Фильм</span>
             <span class="country">США, 2021 год</span>
-            <a href="" class="play">Смотреть трейлер</a>
+            <a data-fancybox href="https://www.youtube.com/watch?v=8SOyHktrjGE" class="play">Смотреть трейлер</a>
           </div>
           <a href="" class="more">Подробнее</a>
         </div>
@@ -60,17 +62,17 @@
           <!-- /.short-info -->
           <div class="full-info">
             <nav class="tabs">
-              <a href="#" class="tabs-item tabs-item-active">Описание</a>
-              <a href="#" class="tabs-item">Рецензии</a>
-              <a href="#" class="tabs-item">Премьеры</a>
-              <a href="#" class="tabs-item">Актеры</a>
-              <a href="#" class="tabs-item">Награды</a>
-              <a href="#" class="tabs-item">Факты</a>
-              <a href="#" class="tabs-item">Сайты</a>
-              <a href="#" class="tabs-item"><img src="img/bookmark-icon.svg" alt="" class="bookmark-added"></a>
+              <a href="#about" class="tabs-item tabs-item-active">Описание</a>
+              <a href="#reviews" class="tabs-item">Рецензии</a>
+              <a href="#pramieres" class="tabs-item">Премьеры</a>
+              <a href="#actors" class="tabs-item">Актеры</a>
+              <a href="#awards" class="tabs-item">Награды</a>
+              <a href="#facts" class="tabs-item">Факты</a>
+              <a href="#sites" class="tabs-item">Сайты</a>
+              <a href="#bookmarks" class="tabs-item"><img src="img/bookmark-icon.svg" alt="" class="bookmark-added"></a>
             </nav>
             <div class="full-content">
-              <div class="tabs-content">
+              <div class="tabs-content vivble" id="about">
                 <p class="text">Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.</p>
                 <p class="text"> Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и сценаристом фильма выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон</p>
                 <h4 class="text-title">Разработка</h4>
@@ -78,9 +80,30 @@
                 <p class="text">После выхода фильма «Бэтмен против Супермена: На заре справедливости» руководитель агентства WME Патрик Уайтсел подтвердил, что Аффлек написал сценарий для сольного фильма о Бэтмене и в настоящий момент его рассматривают студия и DC. В мае 2016 года Джереми Айронс подтвердил, что он появится в фильме про Тёмного Рыцаря.</p>
                 <p class="text">На Comic-Con в Сан-Диего в июле 2016 года было официально подтверждено, что Аффлек станет режиссёром картины. В августе 2016 года на одной из страниц Аффлека в социальных сетях был опубликован тестовый материал, в котором был показан персонаж Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо Манганьелло сыграет наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.</p>
               </div>
+              <div class="tabs-content" id="reviews">
+                <p class="text">тут скоро появятся рецензии</p>
+              </div>
+              <div class="tabs-content" id="pramieres">
+                <p class="text">тут скоро появятся Премьеры</p>
+              </div>
+              <div class="tabs-content" id="actors">
+                <p class="text">тут скоро появятся Актеры</p>
+              </div>
+              <div class="tabs-content" id="awards">
+                <p class="text">тут скоро появятся Награды</p>
+              </div>
+              <div class="tabs-content" id="facts">
+                <p class="text">тут скоро появятся Факты</p>
+              </div>
+              <div class="tabs-content" id="sites">
+                <p class="text">тут скоро появятся Сайты</p>
+              </div>
+              <div class="tabs-content" id="bookmarks">
+                <p class="text">Ваши закладки</p>
+              </div>
               <div class="subscribe">
                 <h3 class="subscribe-title">Подпишитесь на обновления</h3>
-                <form action="#" class="subscribe-form">
+                <form action="#" class="subscribe-form" required>
                   <input type="text" class="subscribe-input" placeholder="Ваш Email">
                   <button class="subscribe-button">
                     <img src="img/check.svg" alt="check">
@@ -99,6 +122,12 @@
       <!-- /.header -->
     </div>
     <!-- /.container -->
+<!-- jquery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <!-- Fancybox -->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <!-- my script -->
+    <script src="js/main.js"></script>
   </body>
 
 </html>
