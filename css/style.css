@@ -1,4 +1,6 @@
 html {
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -10,7 +12,9 @@ body {
   background-image: url('../img/main-bg.png');
   background-repeat: no-repeat;
   background-position: top center;
-  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden
 }
 
 .container {
@@ -389,7 +393,7 @@ body {
 
 @media (max-width: 1200px) {
   body {
-    background-size: inherit;
+    background-size: auto;
   }
 
   .container {
