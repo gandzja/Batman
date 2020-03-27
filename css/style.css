@@ -4,6 +4,7 @@ body {
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   background-image: url('../img/main-bg.png');
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: top center;
   overflow-x: hidden;
