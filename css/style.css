@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background: #0A090A;
+  background: #0a090a;
   background-size: contain;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -14,7 +14,7 @@ body {
   background-position: top center;
   width: 100%;
   max-width: 100%;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 .container {
@@ -160,7 +160,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #333333;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 3px;
   padding: 5px 10px;
   margin-right: 20px;
@@ -179,7 +179,7 @@ body {
   align-items: center;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -201,7 +201,7 @@ body {
   font-size: 16px;
   line-height: 19px;
   text-align: right;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -220,7 +220,7 @@ body {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 3px;
   padding: 3% 4%;
   color: #000000;
@@ -240,9 +240,9 @@ body {
 }
 
 .button {
-  background: #FF8F27;
+  background: #ff8f27;
   padding: 10px 44px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 14px;
   line-height: 16px;
   border: none;
@@ -252,10 +252,10 @@ body {
 
 .button:hover {
   background: #ffffff;
-  color: #FF8F27;
-  box-shadow: 2px 2px 20px #FF8F27;
+  color: #ff8f27;
+  box-shadow: 2px 2px 20px #ff8f27;
   -webkit-transition: top 3s ease-out 0.5s;
-  transition: top 3s ease-out 0.5s
+  transition: top 3s ease-out 0.5s;
 }
 .button:focus {
   outline: 1px solid #ffffff00;
@@ -272,8 +272,15 @@ body {
 .actors-list {
   margin: 0;
   padding-left: 15px;
-  text-decoration: underline;
   line-height: 150%;
+}
+
+.actors-link {
+  color: #000000;
+  text-decoration: none;
+}
+.actors-link:hover {
+  text-decoration: underline;
 }
 
 .full-info {
@@ -294,9 +301,9 @@ body {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   /* margin-top: 44px; */
   margin-bottom: 4%;
 }
@@ -315,16 +322,16 @@ body {
 }
 
 .tabs-item:hover {
-  color: #FF8F27;
+  color: #ff8f27;
   -webkit-transition: top 3s ease-out 0.5s;
-  transition: top 3s ease-out 0.5s
+  transition: top 3s ease-out 0.5s;
 }
 .tabs-item:active {
-  color: #FF8F27;
+  color: #ff8f27;
 }
 
 .tabs-item-active {
-  color: #FF8F27;
+  color: #ff8f27;
 }
 
 .tabs-content {
@@ -344,8 +351,22 @@ body {
   font-weight: 900;
   margin-bottom: 2%;
 }
+.actors {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-.banner img{
+.actors-img {
+  width: 200px;
+  height: 200px;
+  /* margin-left: 20px; */
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.banner img {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
@@ -359,7 +380,7 @@ body {
   margin-bottom: 14px;
 }
 
-.subscribe-form  {
+.subscribe-form {
   display: -webkit-box;
   display: flex;
   margin-bottom: 48px;
@@ -367,7 +388,7 @@ body {
 
 .subscribe-input {
   background: rgba(196, 196, 196, 0.5);
-  border-radius: 5px  0 0 5px;
+  border-radius: 5px 0 0 5px;
   /* внутренние отступы */
   padding: 12px 18px 12px 18px;
   /* убираем рамку */
@@ -379,15 +400,15 @@ body {
   line-height: 16px;
 }
 
-
 .subscribe-button {
-  background: #FF8F27;
+  background: #ff8f27;
   border-radius: 0px 5px 5px 0px;
   border: none;
   padding: 12px;
   cursor: pointer;
 }
-.subscribe-input:focus, .subscribe-button:focus {
+.subscribe-input:focus,
+.subscribe-button:focus {
   outline: 1px solid #ffffff00;
 }
 
@@ -428,7 +449,8 @@ body {
     margin-right: 0;
   }
 
-  .text, .actors-list {
+  .text,
+  .actors-list {
     font-size: 14px;
   }
 }
@@ -468,7 +490,7 @@ body {
   .search {
     flex-basis: 100%;
     -webkit-box-ordinal-group: 4;
-            order: 3;
+    order: 3;
     margin-top: 5%;
   }
 
@@ -480,7 +502,8 @@ body {
     margin-bottom: 5%;
   }
 
-  .actors-list, .actors-title {
+  .actors-list,
+  .actors-title {
     display: none;
   }
 
